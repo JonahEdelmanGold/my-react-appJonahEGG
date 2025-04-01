@@ -31,27 +31,30 @@ export function App() {
     </>
   )
 }
+function Square{
+  <>
+  return <button className="square">1</button>;
+  </>
+}
 
-
-
-export default function Square() {
+export default function Board() {
   return (
     <>
-    <div className = "boardRow">
-    <button className="square">X</button>
-    <button className="square">X</button>
-    <button className="square">X</button>
-    </div>
-    <div className = "boardRow">
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-    </div>
-    <div className = "boardRow">
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-    </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
     </>
   );
 }
