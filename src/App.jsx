@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+export function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -32,4 +32,26 @@ function App() {
   )
 }
 
-export default App
+
+
+export default function Square() {
+  return (
+    <>
+    <div className = "boardRow">
+    <button className="square">X</button>
+    <button className="square">X</button>
+    <button className="square">X</button>
+    </div>
+    <div className = "boardRow">
+      <button className="square">X</button>
+      <button className="square">X</button>
+      <button className="square">X</button>
+    </div>
+    <div className = "boardRow">
+      <button className="square">X</button>
+      <button className="square">X</button>
+      <button className="square">X</button>
+    </div>
+    </>
+  );
+}
